@@ -4,8 +4,6 @@ const ProfilePage = require('../../pages/Profile.page');
 const profilePage = new ProfilePage();
 const loginPage = new LoginPage();
 const homePage = new HomePage();
-const assert = require('assert');
-
 
 describe('go to home page', () => {
 
@@ -15,13 +13,7 @@ describe('go to home page', () => {
 
     it('go to Profile or login', () => {
         homePage.goToProfile();
-        assert (loginPage.checkTitle());
-    });
-
-    it('Login in', () => {
-        homePage.goToProfile();
         loginPage.login();
-        assert (profilePage.checkProfilePage());
+        expect (profilePage.checkProfilePage());
     });
-
 });
