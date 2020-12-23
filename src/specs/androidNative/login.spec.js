@@ -15,13 +15,13 @@ describe('go to home page', () => {
 
     it('go to Profile or login', () => {
         homePage.goToProfile();
-        expect (loginPage.checkTitle());
+        assert (loginPage.checkTitle());
     });
 
-    it('Login in', () =>{
+    it('Login in', () => {
         homePage.goToProfile();
         loginPage.login();
-        expect (profilePage.checkProfilePage());
+        assert (profilePage.checkProfilePage());
     });
 
 });

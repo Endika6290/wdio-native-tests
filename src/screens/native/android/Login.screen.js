@@ -6,8 +6,8 @@ class LoginScreen{
         this.SignInButton = '//android.widget.Button[@resource-id="com.stubhub:id/login_btn"]';
 
 
-        this.USERNAME= "stubhubmobileqe2016@gmail.com";
-        this.PASSWORD="ihatestupidpeople2";
+        this.USERNAME= 'stubhubmobileqe2016@gmail.com';
+        this.PASSWORD='ihatestupidpeople2';
 
     }
 

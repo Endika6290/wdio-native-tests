@@ -1,6 +1,7 @@
 class ProfileScreen{
     constructor(){
-        this.ProfileImage = '//XCUIElementTypeImage[@name="ProfileImage"]';
+        //this.ProfileImage = $('~settingsButton');
+        this.ProfileImage = '//XCUIElementTypeButton[@name="settingsButton"]';
     }
 
 }

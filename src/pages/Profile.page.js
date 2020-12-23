@@ -9,6 +9,7 @@ class HomePage {
 
     checkProfilePage() {
         ActionHelper.isVisible(this.getObjectLocator().ProfileImage);
+        //ActionHelper.waitForElement(this.getObjectLocator().ProfileImage,10);
     }
 
 }

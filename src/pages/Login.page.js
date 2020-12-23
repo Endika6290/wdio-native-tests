@@ -8,13 +8,15 @@ class LoginPage {
     }
 
     checkTitle() {
-            ActionHelper.isVisible(this.getObjectLocator().SignInTitle);
+        ActionHelper.isVisible(this.getObjectLocator().SignInTitle);
     }
 
     login(){
         ActionHelper.sendText((this.getObjectLocator().EmailInput),(this.getObjectLocator().USERNAME));
         ActionHelper.sendText((this.getObjectLocator().PasswordInput),(this.getObjectLocator().PASSWORD));
         ActionHelper.click((this.getObjectLocator().SignInButton));
+        ActionHelper.pause(5);
+
     }
 }
 

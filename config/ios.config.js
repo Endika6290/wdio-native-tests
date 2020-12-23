@@ -11,8 +11,7 @@ config.capabilities = [
         fullReset: false,
         deviceName: iosInfo.deviceName,
         platformVersion: iosInfo.platformVersion,
-       // app: iosInfo.app,
-        bundleId:"com.stubhub.stubhub",
+        //bundleId:'com.stubhub.stubhub',
         app: path.resolve('apps/' + iosInfo.app)
     }
 ];

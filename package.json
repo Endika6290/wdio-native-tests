@@ -8,8 +8,7 @@
     "iosBrowser": "wdio ./config/iosBrowser.config.js",
     "androidBrowser": "wdio ./config/androidBrowser.config.js",
     "lint": "eslint .",
-    "allure": "allure generate ./reports/allure/allure-results && allure open --clean",
-    "build-iOS": "xcodebuild -workspace StubHub.xcworkspace -scheme StubHub -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.2' -derivedDataPath ios/build "
+    "allure": "allure generate ./reports/allure/allure-results --clean && allure open"
   },
   "keywords": [
     "Appium",
@@ -36,5 +35,8 @@
     "wdio-chromedriver-service": "^6.0.3",
     "wdio-json-reporter": "^2.0.0",
     "appium-xcuitest-driver": "^3.33.0"
+  },
+  "dependencies": {
+    "expect-webdriverio": "latest"
   }
 }

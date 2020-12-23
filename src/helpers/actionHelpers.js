@@ -12,6 +12,10 @@ class ActionHelper {
         driver.reset()
     }
 
+    static  removeApp(){
+        driver.removeApp('com.stubhub.stubhub');
+    }
+
     static launchApp() {
         driver.launchApp();
     }
@@ -33,7 +37,7 @@ class ActionHelper {
     }
 
     static waitForElement(locator, waitTimeInSeconds) {
-        $(locator).waitForDisplayed(waitTimeInSeconds * 1000);
+        $(locator).waitForDisplayed(waitTimeInSeconds * 1000).isDisplayed();
     }
 
     static clearText(locator) {

@@ -4,7 +4,8 @@ const ProfilePage = require('../../pages/Profile.page');
 const profilePage = new ProfilePage();
 const loginPage = new LoginPage();
 const homePage = new HomePage();
-const assert = require('assert');
+require('expect-webdriverio');
+
 
 
 describe('go to home page', () => {
@@ -13,9 +14,8 @@ describe('go to home page', () => {
         homePage.launchApp();
     });
 
-    it('Login in', () =>{
+    it('Login in', () => {
         homePage.goToProfile();
-        expect (loginPage.checkTitle());
         loginPage.login();
         expect (profilePage.checkProfilePage());
     });

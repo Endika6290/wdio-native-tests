@@ -14,7 +14,7 @@ config.capabilities = [
         platformVersion: androidInfo.platformVersion,
         app: path.resolve('apps/' + androidInfo.app),
         avd:androidInfo.deviceName,
-        adbExecTimeout:"20000"
+        adbExecTimeout:'20000'
     }
 ];
 
