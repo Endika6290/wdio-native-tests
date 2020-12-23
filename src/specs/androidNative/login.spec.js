@@ -11,6 +11,10 @@ describe('go to home page', () => {
         homePage.launchApp();
     });
 
+    after(() => {
+        homePage.closeApp();
+    });
+
     it('go to Profile or login', () => {
         homePage.goToProfile();
         loginPage.login();

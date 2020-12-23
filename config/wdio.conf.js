@@ -102,8 +102,6 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         'appium'
-
-
     ],
     appium: {
         command: 'appium',
@@ -137,7 +135,6 @@ exports.config = {
         'spec', [
             'allure', {
                 outputDir: './reports/allure/allure-results'
-
             }
         ], [
             'json', {

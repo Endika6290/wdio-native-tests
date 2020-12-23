@@ -19,6 +19,15 @@ class HomePage {
         ActionHelper.switchToNativeContext();
         ActionHelper.pause(10);
     }
+
+    closeApp() {
+        ActionHelper.closeApp();
+    }
+
+    deleteSession() {
+        ActionHelper.deleteSession();
+    }
+
 }
 
 module.exports = HomePage;

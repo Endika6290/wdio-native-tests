@@ -51,6 +51,14 @@ class ActionHelper {
     static getText(locator) {
         return $(locator).getText();
     }
+
+    static closeApp(){
+        driver.closeApp();
+    }
+
+    static deleteSession(){
+        driver.deleteSession();
+    }
 }
 
 module.exports = ActionHelper;

@@ -5,12 +5,9 @@ class LoginScreen{
         this.PasswordInput = '//android.widget.EditText[@resource-id="com.stubhub:id/password_input"]';
         this.SignInButton = '//android.widget.Button[@resource-id="com.stubhub:id/login_btn"]';
 
-
         this.USERNAME= 'stubhubmobileqe2016@gmail.com';
         this.PASSWORD='ihatestupidpeople2';
-
     }
-
 }
 
 module.exports = new LoginScreen();
