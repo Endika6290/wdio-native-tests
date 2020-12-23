@@ -4,9 +4,6 @@ const ProfilePage = require('../../pages/Profile.page');
 const profilePage = new ProfilePage();
 const loginPage = new LoginPage();
 const homePage = new HomePage();
-require('expect-webdriverio');
-
-
 
 describe('go to home page', () => {
 
