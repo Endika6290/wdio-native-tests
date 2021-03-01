@@ -11,6 +11,9 @@ class HomePage {
         if (ActionHelper.isVisible(this.getObjectLocator().jumbotron)) {
             ActionHelper.click(this.getObjectLocator().ProfileButton);
             ActionHelper.pause(10);
+        }else{
+            ActionHelper.pause(10);
+            ActionHelper.click(this.getObjectLocator().ProfileButton);
         }
     }
 
