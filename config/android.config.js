@@ -6,7 +6,7 @@ const path = require('path');
 config.capabilities = [
     {
         platformName: 'Android',
-        automationName: 'uiautomator2',
+       // automationName: 'uiautomator2',
         maxInstances: 1,
         noReset: true,
         fullReset: false,
