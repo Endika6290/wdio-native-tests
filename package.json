@@ -36,7 +36,8 @@
     "wdio-chromedriver-service": "^6.0.3",
     "wdio-json-reporter": "^2.0.0",
     "appium-xcuitest-driver": "^3.33.0",
-    "appium": "^1.18.1"
+    "appium": "^1.20.0-beta.0",
+    "appium-uiautomator2-server":"4.20.0"
   },
   "dependencies": {
     "expect-webdriverio": "latest"
