@@ -9,7 +9,10 @@
     "androidBrowser": "wdio ./config/androidBrowser.config.js",
     "lint": "eslint .",
     "allure": "allure generate ./reports/allure/allure-results --clean && allure open",
-    "installChromedriver": "npm install chromedriver --chromedriver-force-download"
+    "installChromedriver": "npm install chromedriver --chromedriver-force-download",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "keywords": [
     "Appium",
