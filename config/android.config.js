@@ -16,7 +16,6 @@ config.capabilities = [
         app: path.resolve('apps/' + androidInfo.app),
         avd:androidInfo.deviceName,
         adbExecTimeout:'20000',
-        skipServerInstallation:'true'
     }
 ];
 
