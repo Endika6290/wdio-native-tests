@@ -94,7 +94,7 @@ exports.config = {
     connectionRetryTimeout: 120000,
     //
     // Default request retries count
-    connectionRetryCount: 3,
+    connectionRetryCount: 5,
     //
     // Test runner services
     // Services take over a specific job you don't want to take care of. They enhance
@@ -119,7 +119,7 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 120000
     },
     //
     // The number of times to retry the entire specfile when it fails as a whole
