@@ -10,6 +10,7 @@ config.capabilities = [
         maxInstances: 1,
         noReset: true,
         fullReset: false,
+        noSign:true,
         deviceName: androidInfo.deviceName,
         platformVersion: androidInfo.platformVersion,
         app: path.resolve('apps/' + androidInfo.app),
